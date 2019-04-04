@@ -1,0 +1,27 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor tests/conf.js",
+    "start_update_webdriver": "webdriver-manager update && webdriver-manager start --detach --seleniumPort=4444",
+    "run_stop_webdriver": "kill -9 $(lsof -ti tcp:4444)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WELDISSON/pokedex.git"
+  },
+  "author": "Weldisson Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WELDISSON/pokedex/issues"
+  },
+  "homepage": "https://github.com/WELDISSON/pokedex#readme",
+  "devDependencies": {
+    "protractor": "^5.4.2"
+  },
+  "dependencies": {
+    "chromedriver": "^2.46.0"
+  }
+}
